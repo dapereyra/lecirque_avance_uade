@@ -1,0 +1,29 @@
+
+.main-section {
+    animation: fadeIn 5s ease-in-out;
+}
+.main-section h2, .main-section h3, .main-section p {
+    animation: slideIn 1s ease-in-out;
+}
+.main-section img {
+    transition: transform 0.3s ease-in-out;
+}
+.main-section img:hover {
+    transform: scale(1.05);
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+    min-width: 100%;
+}
