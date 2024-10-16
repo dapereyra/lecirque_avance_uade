@@ -56,7 +56,8 @@ p { margin-bottom: 1em;}
 
 .border-purple { border: 1px solid var(--purple-dark); }
 .border-pink { border: 1px solid var(--pink); }
-.btn { height: 2em; padding: 1em 2em; text-transform: uppercase; }
+
+.btn { padding: 1em 2em; text-transform: uppercase; }
 
 
 .main-section {
