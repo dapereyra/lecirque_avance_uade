@@ -1,0 +1,39 @@
+.intro { background-image: url(../img/img-01-50.png); } 
+
+
+/* CONTENT */
+section h1 { 
+    font-size: 3em;
+    text-align: center;
+}
+
+section:not(#intro) {
+    margin-bottom: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+article {
+    max-width: 60%;
+    text-align: justify;
+    margin: 2em auto;
+}
+
+#intro article { max-width: 55%; }
+
+#team ul { text-align: center;}
+#team ul li { display: flex; flex-direction: column;}
+
+
+.w3-half {height:280px;padding-top:16px}
+
+.color {
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--white);
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.label { text-align: center;  font-weight: 600; font-size: 1.1em; }
