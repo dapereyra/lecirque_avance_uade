@@ -48,7 +48,7 @@ nav ul {
   z-index: 999;
 }
 
-nav ul li a {
+nav ul li a  {
   font-family: "Cinzel", serif;
   font-weight: bold;
   font-size: 16;
@@ -127,3 +127,113 @@ footer {
     margin: 10px;
   }
 }
+
+.team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-right: 40rem;
+}
+.team-member {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.team-member:hover .member-image {
+  transform: scale(1.1);
+}
+
+.member-card {
+  position: absolute;
+  top: 50%;
+  width: 30vw;
+  padding: 1rem;
+  align-content: center;
+  background-color:#172D69;
+  margin: 0 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.member-card h3, .member-card p{
+  margin: 0 auto;
+}
+.member-name {
+  font-size: 1.5rem;
+}
+
+.team-member .member-card {
+  left: 170px; 
+  transform: translateY(-50%) translateX(-20px);
+}
+
+.team-member:hover .member-card {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0); 
+}
+
+@media screen and (max-width: 768px) {
+  .team-container {
+    margin: 2rem 0;
+    padding: 0 ;
+  }
+
+  .team-member {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+
+  }
+
+  .member-image {
+    width: 100%;
+    max-height: 300px;
+    max-width: 300px; 
+    height: auto;
+  }
+ 
+  .member-card {
+    position: static;
+    width: 85%;
+    box-sizing: border-box;
+    margin: 1rem auto 0; 
+    opacity: 1;
+    transform: none;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .team-member .member-card,
+  .team-member .member-card {
+    left: auto;
+    right: auto;
+    transform: none;
+  }
+
+  .team-member:hover .member-card {
+    opacity: 1;
+    transform: none;
+  }
+
+  .team-member:hover .member-image {
+    transform: none;
+  }
+}
+
+
+
+
