@@ -108,6 +108,15 @@ footer {
   padding: 15px 0;
 }
 
+.container-inicio {
+  background-color: rgba(23, 45, 105, 0.5);
+  max-width: 800px;
+  max-width: 80%;
+  border-radius: 8px;
+  padding: 20px 0;
+  margin: auto;
+}
+
 /* PROYECTO */
 
 .img-header-proyecto,
@@ -289,7 +298,7 @@ footer {
 }
 
 .fuente {
-  background-color: #e3b94e;
+  background-color: rgba(227, 185, 78, 0.8);
   color: #172d69;
   width: 70%;
   margin: auto;
